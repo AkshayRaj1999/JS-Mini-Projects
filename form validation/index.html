@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<form id="contactForm">
+  <div>
+    <label for="f-name">First Name</label>
+    <input type="text" id="f-name" placeholder="Enter your first name">
+    <span id="f-name-error" class="error"></span>
+  </div>
+
+  <div>
+    <label for="l-name">Last Name</label>
+    <input type="text" id="l-name" placeholder="Enter your last name">
+    <span id="l-name-error" class="error"></span>
+  </div>
+
+  <div>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email address">
+    <span id="email-error" class="error"></span>
+  </div>
+
+  <div>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter your phone number">
+    <span id="phone-error" class="error"></span>
+  </div>
+
+  <button type="submit">Send A Message</button>
+</form>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
