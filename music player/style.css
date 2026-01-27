@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, "Arial", "Inter";
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.music-player {
+  width: 400px;
+  background-color: hotpink;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.circle {
+  border-radius: 50%;
+  background: white;
+  color: rgba(255, 68, 99, 1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.song-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  box-shadow: 0, 10px, 60px, rgba(0, 0, 0, 0.25);
+}
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 68, 99, 1);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#musicSlider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 20px;
+  cursor: grab;
+}
+#musicSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hotpink;
+  border: 5px solid white;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cover-cover-rotate {
+  animation: rotate 10s linear infinite;
+}
+.h1-wrapper {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+@keyframes slideX{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+.move-heading{
+    animation: slideX 5s linear infinite;
+}

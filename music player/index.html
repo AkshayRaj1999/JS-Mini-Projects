@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="nav">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                </div>
+                <div class="circle">
+<svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+            </div>
+            <img src="Media/image.jpg" alt="music cover image" class="song-image">
+            <div class="h1-wrapper">
+                <h1>Muppathi Mukkodi Devthakallennum</h1>
+            </div>
+            <p>Sargam Music</p>
+            <div>
+                <span id="currentTime">0:00</span>
+                <span>/</span>
+                <span id="duration">0:00</span>
+            </div>
+            <audio id="music" preload="metadata">
+                <source  src="Media/Muppathi (PenduJatt.Com.Se).mp3" type="audio/mpeg"/>
+            </audio>
+            <div>
+                <input type="range" name="musicSlider" id="musicSlider" min="0"  value="0">
+            </div>
+            <button type="button" id="musicPlayButton">Play</button>
+        </div>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
